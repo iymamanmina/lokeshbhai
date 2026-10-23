@@ -309,28 +309,15 @@ src="https://www.facebook.com/tr?id=992146713435930&ev=PageView&noscript=1"
                 });
             }
 
-            // --- Button 2: purely visual, silent auto-redirect, NO tracking at all ---
-            const cta2 = document.getElementById('telegramCTA2');
-            let cta2Handled = false;
+            // --- Button 2: redirect only on manual click ---
+const cta2 = document.getElementById('telegramCTA2');
 
-            function redirectButton2() {
-                if (cta2Handled) return;
-                cta2Handled = true;
-                if (cta2) cta2.classList.add('is-disabled');
-                // no fbq call here, no localStorage write, zero tracking by design
-                goToTelegram();
-            }
-
-            if (cta2) {
-                cta2.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    redirectButton2();
-                });
-
-                // auto-redirect after 20 seconds (within the requested 15–20 second range)
-                const delay = 20000;
-                setTimeout(redirectButton2, delay);
-            }
+if (cta2) {
+    cta2.addEventListener('click', function (e) {
+        e.preventDefault();
+        goToTelegram();
+    });
+}
 
             anime({
                 targets: '.glass-card',

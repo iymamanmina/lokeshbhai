@@ -1,12 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokesh Bhai Khaiwal - Trusted Since 2008</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -39,6 +42,7 @@
             }
         }
     </script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -158,40 +162,61 @@
         }
     </style>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '992146713435930');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=992146713435930&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code: PageView only -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '992146713435930');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=992146713435930&ev=PageView&noscript=1"
+        />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
+
 <body class="text-white flex items-center justify-center p-4 pitch-texture">
-    <!-- Small top-right badge button: auto-redirects, no tracking -->
-    <a href="https://t.me/+LE9DLFKfm8xlMzBl" id="telegramCTA2" class="fixed top-3 right-3 z-20 cta-button text-white text-xs font-semibold py-2 px-3 rounded-full no-underline flex items-center gap-1 shadow-md">
+
+    <!-- Top-right Telegram button: manual click only -->
+    <a href="https://t.me/+LE9DLFKfm8xlMzBl"
+       id="telegramCTA2"
+       class="fixed top-3 right-3 z-20 cta-button text-white text-xs font-semibold py-2 px-3 rounded-full no-underline flex items-center gap-1 shadow-md">
+
         <i data-feather="send" class="w-3 h-3"></i>
         <span>🚀 Telegram पर तुरंत Join करें</span>
     </a>
+
     <div class="container max-w-md mx-auto relative z-10">
+
         <!-- Profile Section -->
         <div class="flex flex-col items-center mb-8 pt-6">
+
             <div class="profile-ring rounded-full p-1 mb-4">
-                <img src="lokeshbhai.jpg" alt="Lokesh Bhai Khaiwal" class="w-28 h-28 rounded-full object-cover border-4 border-cricket-green-600">
+                <img src="lokeshbhai.jpg"
+                     alt="Lokesh Bhai Khaiwal"
+                     class="w-28 h-28 rounded-full object-cover border-4 border-cricket-green-600">
             </div>
-            <h1 class="text-3xl font-bold mb-1 text-cricket-gold-400 text-center" style="font-family: 'Rajdhani', sans-serif; text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);">
+
+            <h1 class="text-3xl font-bold mb-1 text-cricket-gold-400 text-center"
+                style="font-family: 'Rajdhani', sans-serif; text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);">
                 LOKESH BHAI KHAIWAL
             </h1>
-            <p class="text-sm text-gray-300 mb-3 text-center">Live · Since 2008 · Trusted</p>
+
+            <p class="text-sm text-gray-300 mb-3 text-center">
+                Live · Since 2008 · Trusted
+            </p>
+
             <div class="flex items-center gap-2 flex-wrap justify-center">
                 <span class="px-3 py-1 bg-cricket-red-500/30 rounded-full text-xs border border-cricket-gold-400/30">
                     18+ Age Only
@@ -201,53 +226,73 @@ src="https://www.facebook.com/tr?id=992146713435930&ev=PageView&noscript=1"
 
         <!-- Stats Section -->
         <div class="grid grid-cols-3 gap-3 mb-8">
+
             <div class="glass-card rounded-xl p-4 text-center border-2 border-cricket-green-500/30 hover:border-cricket-gold-400/50">
                 <div class="text-cricket-gold-400 font-bold text-2xl mb-1 stat-number">10,000+</div>
                 <div class="text-xs text-gray-300 font-medium">Active Members</div>
             </div>
+
             <div class="glass-card rounded-xl p-4 text-center border-2 border-cricket-red-500/30 hover:border-cricket-gold-400/50">
                 <div class="text-cricket-red-400 font-bold text-2xl mb-1 stat-number">17+</div>
                 <div class="text-xs text-gray-300 font-medium">साल की सेवा</div>
             </div>
+
             <div class="glass-card rounded-xl p-4 text-center border-2 border-cricket-green-500/30 hover:border-cricket-gold-400/50">
                 <div class="text-cricket-gold-400 font-bold text-2xl mb-1 stat-number">20</div>
                 <div class="text-xs text-gray-300 font-medium">Min में Payment</div>
             </div>
+
         </div>
 
+        <!-- Information Section -->
         <div class="glass-card rounded-xl p-6 mb-8 border-2 border-cricket-red-500/30">
-            <h2 class="text-lg font-bold text-cricket-gold-400 mb-3" style="font-family: 'Rajdhani', sans-serif;">क्यों चुनें Lokesh Bhai Khaiwal?</h2>
+
+            <h2 class="text-lg font-bold text-cricket-gold-400 mb-3"
+                style="font-family: 'Rajdhani', sans-serif;">
+                क्यों चुनें Lokesh Bhai Khaiwal?
+            </h2>
+
             <ol class="text-sm text-gray-300 leading-relaxed space-y-2 list-decimal list-inside">
                 <li>17 साल पुराना भरोसा — एक भी शिकायत नहीं</li>
                 <li>हर गेम का Payment 20 मिनट में सीधे Account में</li>
                 <li>10,000+ Members — सब खुश, सब Satisfied</li>
                 <li>100% Transparent Rate — कोई छुपाव नहीं, कोई धोखा नहीं</li>
             </ol>
+
         </div>
 
-        <!-- CTA Button (tracked, manual click only) -->
-        <a href="https://t.me/+LE9DLFKfm8xlMzBl" id="telegramCTA" class="block w-full cta-button text-white font-bold py-5 px-6 rounded-xl mb-8 transition-all duration-300 no-underline relative overflow-hidden stadium-glow">
+        <!-- Main Telegram CTA: no Subscribe tracking -->
+        <a href="https://t.me/+LE9DLFKfm8xlMzBl"
+           id="telegramCTA"
+           class="block w-full cta-button text-white font-bold py-5 px-6 rounded-xl mb-8 transition-all duration-300 no-underline relative overflow-hidden stadium-glow">
+
             <div class="flex items-center justify-center relative z-10">
                 <i data-feather="send" class="w-6 h-6 mr-3"></i>
                 <span class="text-lg">✈️ Telegram GROUP अभी जॉइन करें</span>
             </div>
+
         </a>
 
         <!-- Trust Badges -->
         <div class="glass-card rounded-xl p-6 mb-8 text-center border-2 border-cricket-gold-400/30">
+
             <div class="flex items-center justify-center gap-6 flex-wrap">
+
                 <div class="flex flex-col items-center">
                     <i data-feather="check-circle" class="text-cricket-green-400 w-8 h-8 mb-2 trophy-icon"></i>
                     <span class="text-xs text-gray-300">10,000+ Happy Members</span>
                 </div>
+
                 <div class="flex flex-col items-center">
                     <i data-feather="book-open" class="text-cricket-gold-400 w-8 h-8 mb-2 trophy-icon"></i>
                     <span class="text-xs text-gray-300">Payment 20 मिनट में Clear</span>
                 </div>
+
                 <div class="flex flex-col items-center">
                     <i data-feather="shield" class="text-cricket-red-400 w-8 h-8 mb-2 trophy-icon"></i>
                     <span class="text-xs text-gray-300">100% Transparent Rate</span>
                 </div>
+
             </div>
         </div>
 
@@ -257,9 +302,11 @@ src="https://www.facebook.com/tr?id=992146713435930&ev=PageView&noscript=1"
             <p>© 2008–2026 Lokesh Bhai Khaiwal. All rights reserved.</p>
             <p class="mt-2">18+ Age Only · Play Responsibly · For Entertainment Only</p>
         </div>
+
     </div>
 
     <script>
+        // Initialize Feather icons
         try {
             if (typeof feather !== 'undefined') {
                 feather.replace();
@@ -268,83 +315,82 @@ src="https://www.facebook.com/tr?id=992146713435930&ev=PageView&noscript=1"
             console.warn('feather icons failed to load, continuing anyway', err);
         }
 
-        // Telegram invite - use the app deep link so it opens in Telegram app when installed
+        // Telegram invite URL
         const TELEGRAM_URL = 'https://t.me/+LE9DLFKfm8xlMzBl';
-        const PIXEL_FIRED_KEY = 'subscribeEventFired'; // persists across visits on this browser
+
+        // Prevent repeated clicks on the main button during navigation
+        let clickHandled = false;
 
         function goToTelegram() {
-            // same-tab navigation -> not subject to popup blockers,
-            // works fine even inside a setTimeout callback
             window.location.href = TELEGRAM_URL;
         }
 
-        // in-memory guard: blocks a second click in THIS page load
-        let clickHandled = false;
-
-        function fireSubscribeEventOnce() {
-            // only ever fire once per browser, ever - real conversion signal only
-            if (localStorage.getItem(PIXEL_FIRED_KEY) === '1') return;
-            localStorage.setItem(PIXEL_FIRED_KEY, '1');
-            if (typeof window.fbq === 'function') {
-                window.fbq('track', 'Subscribe');
-            }
-        }
-
         document.addEventListener('DOMContentLoaded', function () {
+
+            // Main Telegram button
             const cta = document.getElementById('telegramCTA');
 
             if (cta) {
                 cta.addEventListener('click', function (e) {
                     e.preventDefault();
 
-                    // hard stop: ignore any click after the first one
                     if (clickHandled) return;
+
                     clickHandled = true;
                     cta.classList.add('is-disabled');
 
-                    // fire real, single conversion event tied to an actual click
-                    fireSubscribeEventOnce();
-
+                    // Redirect only. No Subscribe event.
                     goToTelegram();
                 });
             }
 
-            // --- Button 2: redirect only on manual click ---
-const cta2 = document.getElementById('telegramCTA2');
+            // Top-right Telegram button
+            const cta2 = document.getElementById('telegramCTA2');
 
-if (cta2) {
-    cta2.addEventListener('click', function (e) {
-        e.preventDefault();
-        goToTelegram();
-    });
-}
+            if (cta2) {
+                cta2.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-            anime({
-                targets: '.glass-card',
-                translateY: [30, 0],
-                opacity: [0, 1],
-                duration: 1000,
-                delay: anime.stagger(150),
-                easing: 'easeOutExpo'
-            });
+                    // Redirect only. No Subscribe event.
+                    goToTelegram();
+                });
+            }
 
-            anime({
-                targets: '.profile-ring',
-                scale: [0.8, 1],
-                opacity: [0, 1],
-                duration: 1200,
-                easing: 'easeOutElastic(1, .6)'
-            });
+            // Original glass-card animation
+            if (typeof anime !== 'undefined') {
 
-            anime({
-                targets: '.cta-button',
-                scale: [0.95, 1],
-                opacity: [0, 1],
-                duration: 800,
-                delay: 400,
-                easing: 'easeOutQuad'
-            });
+                anime({
+                    targets: '.glass-card',
+                    translateY: [30, 0],
+                    opacity: [0, 1],
+                    duration: 1000,
+                    delay: anime.stagger(150),
+                    easing: 'easeOutExpo'
+                });
+
+                // Original profile animation
+                anime({
+                    targets: '.profile-ring',
+                    scale: [0.8, 1],
+                    opacity: [0, 1],
+                    duration: 1200,
+                    easing: 'easeOutElastic(1, .6)'
+                });
+
+                // Original button animation
+                anime({
+                    targets: '.cta-button',
+                    scale: [0.95, 1],
+                    opacity: [0, 1],
+                    duration: 800,
+                    delay: 400,
+                    easing: 'easeOutQuad'
+                });
+
+            }
         });
     </script>
+
 </body>
 </html>
+```
